@@ -1,13 +1,17 @@
 @media only screen and (min-width: 800px){
-.hero{
-    background-color: red;
-    .description{
-    display: flex;
-    flex-direction: row;
-        div{
+body{
+    .decription{
+        display: flex;
+        flex-direction: row;
+        div:first-child{
             width: 40%;
         }
     }
+
+    .Featuress{
+        display: flex;
+        
+    }
 }
-    
+   
 }

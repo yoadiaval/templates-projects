@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,100&display=swap");
 @media only screen and (min-width: 800px) {
-  .hero {
-    background-color: red;
-  }
-  .hero .description {
+  body .decription {
     display: flex;
     flex-direction: row;
   }
-  .hero .description div {
+  body .decription div:first-child {
     width: 40%;
   }
+  body .Featuress {
+    display: flex;
+  }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  --secondary-color: #FFB127;
-  --hover-color:#FEC11E;
+  --secondary-color: #ffb127;
+  --hover-color: #fec11e;
 }
 
 body {
@@ -26,9 +31,9 @@ body hr {
 }
 
 .hero {
-  background: linear-gradient(130deg, #002F42 30%, #008568 100%);
+  background: linear-gradient(130deg, #002f42 30%, #008568 100%);
   padding: 20px 4%;
-  margin: 0 2%;
+  margin: 0 20px;
   border-radius: 0 0 20px 20px;
   color: white;
 }
@@ -36,12 +41,14 @@ body hr {
   font-size: 2.5rem;
 }
 .hero h2 span {
-  color: #FEC11E;
+  color: #fec11e;
 }
 .hero nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .hero nav ul {
   width: 20%;
@@ -50,6 +57,7 @@ body hr {
   list-style: none;
   float: left;
   width: 40%;
+  margin-left: 10px;
 }
 .hero nav ul li a {
   color: white;
@@ -59,30 +67,17 @@ body hr {
   padding: 0.2rem 0.1rem;
   text-align: center;
 }
-.hero nav ul li:nth-child(2) {
+.hero nav ul li:nth-child(2) a {
   background-color: var(--secondary-color);
   border-radius: 5px;
 }
-.hero nav ul li:nth-child(2):hover {
+.hero nav ul li:nth-child(2) a:hover {
   background-color: var(--hover-color);
   scale: 1.03;
   transition: scale ease 0.2s;
 }
-.hero .decription {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-}
-.hero .decription div:nth-child(1) {
-  width: 40%;
-}
-.hero .decription div figure {
-  width: 100%;
-}
-.hero .decription div figure img {
-  width: 80%;
-}
 .hero .search {
+  margin-top: 20px;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
@@ -99,16 +94,26 @@ body hr {
 }
 .hero .search:hover {
   background-color: var(--hover-color);
-  margin: 0.2rem;
-  transition: margin ease 0.3s;
+  margin-left: 0.2rem;
+  transition: margin-left ease 0.3s;
+}
+.hero .img-hero {
+  width: 60%;
+  padding-left: 85px;
+  position: relative;
+  bottom: -50px;
+}
+.hero .img-hero img {
+  width: 100%;
 }
 
 .measure {
   text-align: center;
-  margin-top: -105px;
+  position: relative;
+  bottom: 38px;
 }
 .measure img {
-  width: 70%;
+  width: 70vw;
   border-radius: 10px;
   box-shadow: 0 5px 5px rgba(70, 70, 70, 0.342);
 }
@@ -119,15 +124,13 @@ body hr {
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
-  display: flex;
-  flex-direction: row;
 }
 .Featuress .dot {
   width: 5px;
   height: 5px;
   margin: 5px;
   padding: 0;
-  background-color: #FEB027;
+  background-color: #feb027;
   border-radius: 50%;
 }
 .Featuress .dot_design {
@@ -146,8 +149,9 @@ body hr {
 .Featuress h3 {
   font-size: 1.5rem;
 }
-.Featuress h2, .Featuress h3 {
-  color: #022A5B;
+.Featuress h2,
+.Featuress h3 {
+  color: #022a5b;
   font-weight: bold;
 }
 .Featuress div:nth-child(2) {
@@ -164,7 +168,7 @@ body hr {
   gap: 10px;
   align-items: end;
   margin: 0 2%;
-  background-color: #022A5B;
+  background-color: #022a5b;
   color: white;
   margin-top: 100px;
   border-radius: 20px;
