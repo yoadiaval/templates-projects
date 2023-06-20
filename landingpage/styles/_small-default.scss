@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -58,7 +59,7 @@ body {
       text-align: center;
     }
 
-    ul li:nth-child(2) a{
+    ul li:nth-child(2) a {
       background-color: var(--secondary-color);
       border-radius: 5px;
     }
@@ -102,16 +103,16 @@ body {
   }
 }
 .measure {
-    img {
-      width: 70vw;
-      border-radius: 10px;
-      box-shadow: 0 5px 5px rgba(70, 70, 70, 0.342);
-    }
-    text-align: center;
-    position: relative;
-    bottom: 38px;
-    //margin-top: -105px;
+  img {
+    width: 70vw;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(70, 70, 70, 0.342);
   }
+  text-align: center;
+  position: relative;
+  bottom: 38px;
+  //margin-top: -105px;
+}
 .Featuress {
   width: 70%;
   margin-top: 150px;
@@ -161,27 +162,104 @@ body {
 }
 
 .services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  align-items: end;
-  margin: 0 2%;
   background-color: #022a5b;
   color: white;
-  margin-top: 100px;
-  border-radius: 20px;
-  padding: 4%;
-  margin-bottom: 100px;
-  h2 {
-    font-size: 3rem;
-    height: 10%;
-    margin-bottom: 10px;
-  }
-  img {
-    width: 100%;
-    border-radius: 20px;
-  }
-  hr {
-    margin-bottom: 40px;
+  margin:0 2% 100px 2%;
+  padding: 1%;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 150px); //defile una altura fija
+    gap: 10px;
+    padding: 20px 200px;
+    .item {
+      overflow: hidden;
+      cursor: pointer;
+      position: relative; //al valor p colocarle position absolute para que no se salga de la cuadrícula
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background-color: rgba(86, 111, 158, 0.486);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 400ms ease;
+        .services_links{
+            position: relative;
+            bottom: -80%;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h2, hr,span{
+                color: white;
+                font-weight: bold;
+                transition: left 1s ease;
+        }
+            h2{
+                font-size: 20px;
+                width: 100%;
+            }
+
+                img{
+                    width:20% ;
+                    border: solid 1px white;
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    align-self: center;
+                }
+                hr{margin-top: 7px;}
+
+                
+
+        }
+        
+      }
+    }
+    
+    .item:hover .capa{
+        opacity: 1;
+        visibility: visible;
+        
+    }
+    .item:hover .capa h2{
+        left: 2%;
+    }
+    
+    
+    .item:nth-child(2){
+       grid-column: 2/3;
+       grid-row: 1/5;
+       .services_links{
+        bottom: -90%;
+       }
+    }
+    .item:nth-child(3){
+       grid-column: 3/4;
+       grid-row: 1/3;
+    }
+    .item:nth-child(4){
+       grid-column: 3/4;
+       grid-row: 3/5;
+    }
+    .item:nth-child(5){
+       grid-column: 1/2;
+       grid-row: 2/5;
+       .services_links{
+        bottom: -85%;
+       }
+    }
+    
   }
 }
