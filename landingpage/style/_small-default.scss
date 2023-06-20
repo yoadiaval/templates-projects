@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,100&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  h2 {
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  hr {
+    width: 30%;
+    border: solid 2px #feb027;
+  }
+  p{
+    line-height: 200%;
+    font-size: 1.3rem;
+  }
+}
+
+header {
+  padding: 30px 5%;
+  color: white;
+  background: linear-gradient(130deg, $primary-color 30%, $primary-color2 100%);
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-self: center;
+      li {
+        margin-left: 1rem;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          display: block;
+          padding: 0.5rem;
+        }
+      }
+      li:nth-child(2) a {
+        background-color: $secondary-color;
+        border-radius: 5px;
+      }
+     li:nth-child(2) a:hover {
+      background-color: $hover-color;
+      scale: 1.03;
+      transition: scale ease 0.2s;
+    }
+    }
+  }
+  .hero-description {
+    * {
+      margin: 20px 0;
+    }
+    margin: 70px 0;
+    span {
+      color: $secondary-color;
+    }
+    p:first-child {
+      font-weight: bold;
+    }
+    .hero-text {
+      line-height: 140%;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: white;
+      background-color: $secondary-color;
+      height: 3rem;
+      padding: 0 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+    }
+    button:hover{
+        background-color: $hover-color;
+    margin-left: 0.2rem;
+    transition: margin-left ease 0.3s;
+    }
+  }
+  .hero-fig,
+  .fig-measure {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .hero-fig {
+    margin-bottom: -12%;
+  }
+  .fig-measure {
+    margin-bottom: -12%;
+
+    img {
+      border-radius: 6px;
+      box-shadow: 0 5px 5px rgba(70, 70, 70, 0.342);
+    }
+  }
+}
+
+section.features {
+    color: $primary-color;
+  margin: 200px 5%;
+  position: relative;
+  * {
+    margin: 15px 0;
+  }
+  figure {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    img {
+      width: 60vw;
+      border-radius: 0 20px 0 20px;
+      box-shadow: 0 5px 5px rgba(70, 70, 70, 0.342);
+    }
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    margin: 5px;
+    padding: 0;
+    background-color: #feb027;
+    border-radius: 50%;
+  }
+  .dot_design {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(12, 20px);
+    justify-items: center;
+    position: relative;
+    bottom: 130px;
+    left: 2%;
+    z-index: -1;
+  }
+  
+}
+
+section.services {
+  background-color: $primary-color;
+  color: white;
+  margin: 0 2%;
+  padding: 20px 1%;
+  border-radius: 20px;
+  .services-title {
+    margin-bottom: 40px;
+  }
+  h2 {
+    width: 50%;
+
+    hr {
+      margin: 0.5rem 0;
+    }
+  }
+  .item {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .capa {
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(86, 111, 158, 0.486);
+      color: white;
+      display: flex;
+      align-items: end;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 400ms ease;
+
+      .services_links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2%;
+        margin-bottom: 4%;
+        h2,
+        hr {
+          font-size: 1.3rem;
+          margin-left: 4%;
+          transition: margin-left 400ms ease;
+        }
+        .img-arrow {
+          width: 10%;
+          border: solid 1px white;
+          padding: 0.2rem 1rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .item:hover .capa {
+    opacity: 1;
+    visibility: visible;
+  }
+  .item:hover .capa h2 {
+    left: 10%;
+  }
+}

@@ -3,121 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./js/design.js" defer></script>
-
+    <link rel="stylesheet" href="./style/syles.css" />
+    <script src="./js/script.js" defer></script>
     <title>Sunset</title>
   </head>
   <body>
-    <section class="hero">
+    <header>
       <nav>
-        <div><img src="./image/logo.png" alt="logo" /></div>
+        <figure class="fig-logo">
+          <img src="./images/logo.png" alt="logo Sunset" />
+        </figure>
         <ul>
           <li><a href="#">Register</a></li>
           <li><a href="#">Login</a></li>
         </ul>
       </nav>
-      <div class="decription">
-        <div>
-          <h3>SUNSET HOME HEALTH SERVICES</h3>
-          <h1>
+      <section class="hero">
+        <div class="hero-description">
+          <p>SUNSET HOME HEALTH SERVICES</p>
+          <h2>
             We have a <br />
-            <span> heart</span> for <span>caring</span>
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            earum vitae nemo repellat, nostrum nam vero natus. Nemo excepturi
-            eveniet illo est ducimus, mollitia possimus obcaecati deserunt
-            molestias, eaque facere.
+            <span>heart </span> for <span>caring</span>
+          </h2>
+          <p class="hero-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            porro error aperiam neque eum iste distinctio iusto ad illo,
+            accusamus quaerat ea! Voluptate numquam libero fugiat pariatur
+            cumque ratione harum?
           </p>
-          <div class="search">
-            <button>Request for a Job</button>
-            <img src="./image/arrow.svg" alt="" />
-          </div>
+          <button>
+            Request for a Job &nbsp; &nbsp;
+            <img src="./images/arrow.svg" alt="arrow image" />
+          </button>
         </div>
-        <div>
-          <!--<div class="dot_design" >   
-                </div>-->
-          <figure class="img-hero">
-            <img src="./image/Doctor-PNG-Photos.png" alt="" />
-          </figure>
-        </div>
-      </div>
-    </section>
-    <figure class="measure">
-      <img src="./image/1.png" alt="" />
-    </figure>
-
-    <section class="Featuress">
-      <div>
-        <figure>
-          <img src="./image/img.jpg" alt="" />
+        <figure class="hero-fig">
+          <img
+            class="hero-img"
+            src="./images/hero-img.png"
+            alt="imagen doctores"
+          />
         </figure>
-        <div id="dot_design" class="dot_design"></div>
-      </div>
-      <div>
-        <h2>Our Featuress</h2>
-        <hr />
-        <h3>Our vision</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet
-          recusandae blanditiis nihil eius nemo facilis, ducimus, esse quod
-          soluta nesciunt, harum dolor obcaecati velit possimus at qui tempora!
-          Voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Veniam, ad? Ratione id sint, asperiores perspiciatis nostrum repellat.
-          Accusantium, itaque! Ratione, labore asperiores in pariatur natus
-          cumque reiciendis qui quo provident!
-        </p>
-      </div>
-    </section>
-    <section class="services">
+      </section>
+      <figure class="fig-measure">
+        <img class="img-measure" src="./images/measure.png" alt="" />
+      </figure>
+    </header>
 
-        <div class="grid-container">
+    <main>
+      <section class="features">
+        <div>
+          <figure>
+            <img src="./images/img-features.jpg" alt="" />  
+          </figure>
+          <div id="dot_design" class="dot_design"></div>
+        </div>
+        <div class="features-description">
+          <h2>Our Featuress</h2>
+          <hr />
+          <h3>Our vision</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            amet recusandae blanditiis nihil eius nemo facilis, ducimus, esse
+            quod soluta nesciunt, harum dolor obcaecati velit possimus at qui
+            tempora! Voluptatem. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veniam, ad? Ratione id sint, asperiores
+            perspiciatis nostrum repellat. Accusantium, itaque! Ratione, labore
+            asperiores in pariatur natus cumque reiciendis qui quo provident!
+          </p>
+        </div>
+      </section>
+      <section class="services">
+         <div class="grid-container">
+
             <div>
-                <h2>
+                <h2 class="services-title">
                     Services
+                    <hr>
                 </h2>
-                <hr>
+                
             </div>
             <div class="item">
-                <img loading="lazy" src="./image/nurse.jpg" alt=""/>
+               <img loading="lazy" src="./images/nurse.jpg" alt=""/>
                 <div class="capa">
                    <div class="services_links">
                         <h2>Skilled nurses<hr></h2>
-                        <img src="./image/arrow.svg" alt="" />
+                        <img class="img-arrow" src="./images/arrow.svg" alt="" />
                    </div>
                 </div>
             </div>
             <div class="item">
-                <img loading="lazy" src="./image/nurse2.jpg" alt=""/>
+                <img loading="lazy" src="./images/therapists.jpg" alt=""/>
                 <div class="capa">
                    <div class="services_links">
                         <h2>Therapists<hr></h2>
-                        <img src="./image/arrow.svg" alt="" />
+                        <img class="img-arrow" src="./images/arrow.svg" alt="" />
                    </div>
                 </div>
             </div>
             <div class="item">
-                <img loading="lazy" src="./image/home.jpg" alt=""/>
+                <img loading="lazy" src="./images/home.jpg" alt=""/>
                 <div class="capa">
                    <div class="services_links">
                         <h2>Home helth Aides<hr></h2>
-                        <img src="./image/arrow.svg" alt="" />
+                        <img class="img-arrow" src="./images/arrow.svg" alt="" />
                    </div>
                 </div>
             </div>
             <div class="item">
-                <img loading="lazy" src="./image/pediatric.jpg" alt=""/>
+                <img loading="lazy" src="./images/pediatric.jpg" alt=""/>
                 <div class="capa">
                     <div class="services_links">
                         <h2>Pediatric Home Care<hr></h2>
-                        <img src="./image/arrow.svg" alt="" />
+                        <img class="img-arrow" src="./images/arrow.svg" alt="" />
                    </div>
                 </div>
             </div>
-           
         </div>
-      
-    </section>
+      </section>
+    </main>
   </body>
 </html>
